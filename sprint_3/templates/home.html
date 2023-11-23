@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/table.js') }}"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/activeLinks.js') }}"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/image.js') }}"
+      defer
+    ></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation-container">
+      <div class="logo-container">Recognizer</div>
+      <div class="navigation-styled">
+        <a href="{{ url_for('home_html') }}">
+          <div class="navigation-elements home-link active">Home</div>
+        </a>
+        <div class="horiz-line"></div>
+        <a href="{{ url_for('about_html') }}">
+          <div class="navigation-elements about-link">About</div>
+        </a>
+        <div class="horiz-line"></div>
+        <a href="{{ url_for('contributors_html') }}">
+          <div class="navigation-elements contributors-link">Contributors</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Form and result sections -->
+    <div class="section-container">
+      <div class="form-container">
+        <p class="form-heading">
+          Drag & <span class="bordered-text">Drop</span>
+        </p>
+        <p class="form-contents-1"><b>PNG/JPEG</b> image format support</p>
+        <p class="form-contents-2"><b>Extract</b> information</p>
+        <p class="form-contents-3">
+          <b>Instant</b> Result and Download support
+        </p>
+        <form method="POST" enctype="multipart/form-data">
+          <label for="image">Choose an Image</label>
+          <label for="images" class="drop-container" id="dropcontainer">
+            <span class="drop-title">Drop files here</span>
+            or
+            <input type="file" name="image" id="image" accept="image/*" />
+          </label>
+          <button type="submit" class="submit" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="section-division">
+        <div class="horiz-line"></div>
+        <div class="tab"></div>
+        <div class="horiz-line"></div>
+      </div>
+      <div class="result-container">
+        <div class="result-container-heading">
+          <span>Extracted</span> Results
+        </div>
+        <div class="scrollable-table">
+          <table id="result-table">
+            <tr>
+              <th>Keyword</th>
+              <th>Sentences</th>
+            </tr>
+            {% if information %} {% for keyword, sentences in
+            information.items() %}
+            <tr>
+              <td>{{ keyword }}</td>
+              <td>
+                {% for sentence in sentences %} {{ sentence }}<br />
+                {% endfor %}
+              </td>
+            </tr>
+            {% endfor %} {% else %}
+            <tr class="no-records-row">
+              <td colspan="2">No records available</td>
+            </tr>
+            {% endif %}
+          </table>
+        </div>
+        <div class="download-table">
+          Download
+          <img src="../static/images/download.png" alt="download-image" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

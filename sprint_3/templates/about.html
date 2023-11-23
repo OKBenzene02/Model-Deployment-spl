@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/about.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/activeLinks.js') }}"
+      defer
+    ></script>
+    <title>About Page</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation-container">
+      <div class="logo-container">Recognizer</div>
+      <div class="navigation-styled">
+        <a href="{{ url_for('home_html') }}">
+          <div class="navigation-elements home-link">Home</div>
+        </a>
+        <div class="horiz-line"></div>
+        <a href="{{ url_for('about_html') }}">
+          <div class="navigation-elements about-link active">About</div>
+        </a>
+        <div class="horiz-line"></div>
+        <a href="{{ url_for('contributors_html') }}">
+          <div class="navigation-elements contributors-link">Contributors</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div class="about-container">
+      <div class="about-style">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+      </div>
+      <div class="about-content">
+        <p class="about-heading">About this <span>Project</span></p>
+        <p class="about-content-para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
+          obcaecati facilis, ipsa, modi reiciendis dignissimos exercitationem et
+          quam sed consequatur labore odio assumenda itaque expedita aut.
+          Assumenda voluptates voluptatibus a nam nisi odit, ducimus, facilis
+          sint, dolores vero perspiciatis necessitatibus. Cum, laborum velit,
+          fugiat dignissimos quaerat qui amet consequuntur, quibusdam sapiente
+          accusantium enim doloremque quam? Consectetur mollitia dicta velit
+          facilis ad perferendis quisquam voluptate maiores itaque corporis
+          commodi magnam ipsam id amet rem voluptas corrupti quidem doloribus
+          illo autem ipsum, exercitationem recusandae praesentium odit! At dolor
+          aliquid quisquam voluptas natus omnis minima modi nobis, vero maxime!
+          Vitae quidem perferendis corporis, deserunt nihil id pariatur iste
+          distinctio, atque, aut fugit blanditiis non itaque rerum dolores
+          mollitia animi sit dignissimos laborum modi similique voluptatem
+          asperiores laudantium. Odio illum voluptate porro impedit voluptatibus
+          alias praesentium, ex tenetur eveniet modi harum soluta facere tempora
+          assumenda reiciendis! Debitis nam modi dolor voluptates. Eligendi,
+          eaque ipsa eveniet incidunt, ratione explicabo recusandae, aspernatur
+          assumenda vel pariatur suscipit. Placeat quae corporis et totam eum
+          error mollitia culpa a tempora laboriosam nihil tempore, animi odit
+          doloremque ea eveniet soluta quos dolores possimus quod ratione
+          aliquam pariatur omnis! Labore cupiditate ratione, aliquid rerum
+          recusandae vel. Doloremque officiis hic sunt provident?
+        </p>
+      </div>
+
+      <div class="picture-content">
+        <div class="text-overlay"></div>
+        <div class="line-horiz"></div>
+        <p class="heading">How this works!</p>
+        <div class="gif-content">
+          <div class="content-col">
+            <p class="content-heading">Got your Job Description template ready</p>
+            <div class="animated-image"><img src="../static/images/document.svg" alt="document"></div>
+          </div>
+          <div class="content-col">
+            <p class="content-heading">Scan your template</p>
+            <div class="animated-image"><img src="../static/images/scan-document.svg" alt="document"></div>
+          </div>
+          <div class="content-col">
+            <p class="content-heading">Get the extracted results</p>
+            <div class="animated-image"><img src="../static/images/final-table.svg" alt="document"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Styling Divisions -->
+    <div class="style-parent">
+      <div class="style-div-1"></div>
+      <div class="child2">
+        <div class="style-div-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
