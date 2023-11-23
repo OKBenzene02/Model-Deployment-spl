@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =================================================== Navigation Style =================================================== */
+
+.navigation-container .logo-container{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto 0 2rem;
+}
+
+.navigation-container{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-container .navigation-styled{
+    width: 40rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .3px solid rgba(191, 191, 191, 0.436); /*==*/
+    border-radius: .5rem; /*==*/
+    box-shadow: 0px 10px 15px -17px rgba(0,0,0,0.56); /*==*/
+}
+
+.navigation-container .navigation-styled{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.navigation-container .navigation-styled a{
+    text-decoration: none;
+    color: black
+}
+
+.navigation-container .navigation-styled .navigation-elements{
+    width: 7rem;
+    height: 1.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    font-size: 15px;
+    transition: background .2s ease-in-out;
+}
+
+.navigation-container .navigation-styled .active{
+  background-color: rgb(47, 47, 47);
+  color: #fff;
+}
+
+.navigation-container .navigation-styled .navigation-elements:hover{
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+}
+
+.navigation-container .navigation-styled .horiz-line{
+    width: .07rem;
+    height: 1.5rem;
+    background-color: rgba(191, 191, 191, 0.436); /*==*/
+    border-radius: 1rem;
+}
+
+/* ================================== Sections Form and Result ===================================================*/
+.section-container{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: .01rem;
+}
+
+.section-container .form-container, .section-container .result-container{
+    width: 47rem;
+    height: 38.5rem;
+    border: .3px solid rgba(191, 191, 191, 0.436); /*==*/
+    border-radius: .5rem; /*==*/
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.56); /*==*/
+}
+
+.section-container .section-division{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;     
+}
+    
+
+.section-container .section-division .tab{
+    border: 1px solid rgba(163, 163, 163, 0.544);
+    height: .5rem;
+    width: .5rem;
+    border-radius: .15rem;
+}
+
+.section-container .section-division .horiz-line{
+    width: .05rem;
+    height: 18rem;
+    background-color: rgba(212, 212, 212, 0.436);
+    border-radius: 1rem;
+}
+
+/* =================================================== Form content =================================================== */
+.section-container .form-container .form-heading{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.section-container .form-container .form-heading .bordered-text{
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: .2rem;
+}
+
+.section-container .form-container .form-contents-1{
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.section-container .form-container .form-contents-2{
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.section-container .form-container .form-contents-3{
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+/* =================================================== Form content alignment =================================================== */
+.section-container .form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section-container .form-container form label{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.section-container .form-container form #image{
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #8b8b8b;
+}
+
+.section-container .form-container form #image::file-selector-button{
+    margin-right: 20px;
+    border: none;
+    background: #363636;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.section-container .form-container form #image::file-selector-button:hover{
+    background: #272727;
+}
+
+.section-container .form-container form .drop-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+  
+  .section-container .form-container form .drop-container:hover {
+    background: #eee;
+    border-color: #111;
+  }
+  
+  .section-container .form-container form .drop-container:hover .drop-title {
+    color: #222;
+  }
+  
+  .section-container .form-container form .drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+  }
+
+  .section-container .form-container form .submit{
+    width: 5.5rem;
+    height: 2.7rem;
+    background: #fff;
+    border: 1.5px solid rgb(38, 38, 38);
+    border-radius: .5rem;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+
+  .section-container .form-container form .submit:hover{
+    background: #4444441b;
+    cursor: pointer;
+  }
+
+  /* =================================================== Result Table contents =================================================== */
+
+  .section-container .result-container table {
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: .5rem;
+  }
+  
+  .section-container .result-container td, th {
+    border: 1px solid #2e2e2e;
+    text-align: left;
+    padding: 8px;
+}
+
+.section-container .result-container tr{
+    transition: background .2s ease-in;
+}
+  
+  .section-container .result-container tr:nth-child(even) {
+    background-color: #e7e7e7;
+  }
+
+  .section-container .result-container tr:hover{
+    background-color: #f6f6f6e1;
+  }
+
+  /* =================================================== Result Table contents Scrollable =================================================== */
+
+  .section-container .result-container .result-container-heading{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .section-container .result-container .result-container-heading span{
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: .2rem;
+  }
+
+  .section-container .result-container .scrollable-table{
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 25rem;
+  }
+
+  .section-container .result-container .scrollable-table #result-table .hidden{
+    display: none;
+  }
+
+  .section-container .result-container .download-table{
+    margin-top: 2rem;
+    border: 1px solid rgb(24, 24, 24);
+    width: 8.2rem;
+    height: 2.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    transition: background .2s ease-in;
+    font-size: 13.5px;
+    gap:.2em;
+  }
+
+  .section-container .result-container .download-table img{
+    width: 17px;
+  }
+
+  .section-container .result-container .download-table:hover{
+    background-color: #4444441b;
+    cursor: pointer;
+  }
