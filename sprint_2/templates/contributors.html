@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/contributors.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/activeLinks.js') }}"
+      defer
+    ></script>
+    <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='js/contributorsData.js') }}"
+    defer
+  ></script>
+    <!-- <script
+    type="module"
+    src="{{ url_for('static', filename='js/dataClass.js') }}"
+    defer
+  ></script> -->
+  
+    <title>Contributors</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation-container">
+      <div class="logo-container">Recognizer</div>
+      <div class="navigation-styled">
+        <a href="{{ url_for('home_html') }}">
+          <div class="navigation-elements home-link">Home</div>
+        </a>
+        <div class="horiz-line"></div>
+        <a href="{{ url_for('about_html') }}">
+          <div class="navigation-elements about-link">About</div>
+        </a>
+        <div class="horiz-line"></div>
+        <a href="{{ url_for('contributors_html') }}">
+          <div class="navigation-elements contributors-link active">
+            Contributors
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contributors Heading -->
+    <div class="contributors-heading">
+      <p>Get to know more about our developers!</p>
+    </div>
+
+    <!-- Contributors Page -->
+    <div class="contributors-parent-container">
+      <!-- <div class="contributors-container">
+        <div class="skill-icons">
+          <div class="icons">
+            <img src="../static/images/python.svg" alt="python" class="hidden"/>
+            <img src="../static/images/flask.svg" alt="flask" class="hidden"/>
+            <img src="../static/images/html.svg" alt="html" class="hidden"/>
+            <img src="../static/images/css.svg" alt="css" class="hidden"/>
+            <img src="../static/images/javascript.svg" alt="js" class="hidden"/>
+            <img src="../static/images/reactjs.svg" alt="reactjs" class="hidden"/>
+          </div>
+        </div>
+        <div class="contributors-content">
+          <div class="profile-pic">
+          </div>
+          <div class="content">
+            <p class="contributor-name">Name</p>
+            <p class="summary">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              dolorum, quae dolore ut praesentium fugiat iure quo quaerat
+              corporis. Pariatur ducimus culpa quasi obcaecati! Exercitationem
+              temporibus in reiciendis, iste neque commodi expedita ut, non
+              corrupti at cupiditate? Natus, officia.
+            </p>
+            <div class="social-links">
+              <span>Social Links</span>
+              <a href=""
+                ><img src="../static/images/linkedin.svg" alt="linked-in"
+              /></a>
+              <a href=""
+                ><img src="../static/images/github.svg" alt="github"
+              /></a>
+              <a href=""
+                ><img src="../static/images/facebook.svg" alt="facebook"
+              /></a>
+              <a href=""
+                ><img src="../static/images/instagram.svg" alt="instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-container">
+      <div class="contact-form">
+        <div class="contact-heading">Contact Us</div>
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+          </div>
+          <button type="button" class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Styling Divisions -->
+    <div class="style-parent">
+      <div class="style-div-1"></div>
+      <div class="child2">
+        <div class="style-div-2"></div>
+      </div>
+    </div>
+    
+  </body>
+</html>

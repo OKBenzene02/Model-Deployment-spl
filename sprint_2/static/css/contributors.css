@@ -1,0 +1,259 @@
+/* =================================================== Contributors Heading =================================================== */
+.contributors-heading{
+    margin: 1.5rem 1rem 2rem 1rem;
+}
+
+.contributors-heading p{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* =================================================== Contributors content =================================================== */
+.contributors-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2.3rem 10rem;
+    border: 1px solid rgba(59, 59, 59, 0.436);
+    padding: .7rem;
+    border-radius: .6rem;
+    box-shadow: 0px 10px 15px -17px rgba(64, 64, 64, 0.56);
+    transition: box-shadow .2s ease;
+}
+
+.contributors-container:hover{
+    box-shadow: 0px 14px 18px -11px rgba(55, 55, 55, 0.442);
+}
+
+.contributors-container .skill-icons{
+    border: 1px solid rgba(59, 59, 59, 0.436);
+    border-radius: .3rem;
+    width: max-content;
+    margin-top: -2rem;
+    margin-left: 55%;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    padding: .5rem;
+    height: 2.5rem;
+    display: flex;
+    box-shadow: 0px 0px 15px 5px rgba(205, 205, 205, 0.651);;
+}
+
+.contributors-container .skill-icons .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contributors-container .skill-icons img{
+    width: 1.5rem;
+    transition: transform .2s ease-out;
+}
+
+.contributors-container .skill-icons .hidden{
+    display: none;
+}
+
+.contributors-container .skill-icons img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.contributors-container .contributors-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.contributors-container .contributors-content .profile-pic{
+    width: 40rem;
+    height: 15rem;
+    border: 1px solid rgba(52, 52, 52, 0.827);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/liyakhat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contributors-container .contributors-content .content .contributor-name{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.contributors-container .contributors-content .content .summary{
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+.contributors-container .contributors-content .content .social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contributors-container .contributors-content .content .social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributors-container .contributors-content .content .social-links span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.contributors-container .contributors-content .content .social-links a img{
+    transition: transform .2s ease-out;
+    width: 1.6rem;
+}
+
+.contributors-container .contributors-content .content .social-links a img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* =================================================== Contributors Contact Form =================================================== */
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .contact-form{
+    width: 40rem;
+    height: 34rem;
+    border: 1px solid rgba(73, 73, 73, 0.458);
+    background-color: rgba(203, 203, 203, 0.279);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.56);
+    transition: box-shadow .2s ease;
+}
+
+.contact-container .contact-form .contact-heading{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: rgb(56, 56, 56);
+}
+
+.contact-container .contact-form form .form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+
+.contact-container .contact-form form .form-group label{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgb(56, 56, 56);
+}
+
+.contact-container .contact-form form .form-group input[type=text], 
+.contact-container .contact-form .form-group input[type=email]{
+    width: 25rem;
+    height: 2.5rem;
+    border: 1px solid rgba(61, 61, 61, 0.827);
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+.contact-container .contact-form form .form-group textarea{
+    width: 25rem;
+    max-width: 25rem;
+    max-height: 10rem;
+    height: 5rem;
+    border: 1px solid rgba(61, 61, 61, 0.832);
+    border-radius: .3rem;
+    padding: .5rem;
+}
+
+.contact-container .contact-form form .submit{
+    position: relative;
+    margin: 0 auto 0 auto;
+    transform: translateX(10rem);
+    width: 5.5rem;
+    height: 2.7rem;
+    background: #fff;
+    border: 1.5px solid rgb(45, 45, 45);
+    border-radius: .5rem;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.contact-container .contact-form form .submit:hover{
+    background: #4444441b;
+    cursor: pointer;
+}
+
+.contact-container .contact-form:hover{
+    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.56);
+}
+
+/* =================================================== Contributors Contact Form =================================================== */
+/* 
+.style-div-1{
+    width: 100%;
+    
+    z-index: 0;
+}
+
+.style-div-2{
+    position: absolute;
+    margin-top: -32rem;
+    width: 100%;
+    height: 32rem;
+    clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    background-color: rgb(45, 45, 45);
+    z-index: 10;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
+} */
+
+.style-parent {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+}
+
+.child2 {
+    position: absolute;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    filter: drop-shadow(-5.25px -8px 10px rgba(51, 51, 51, 0.374));
+}
+
+.style-div-1 {
+    position: absolute;
+    width: 100%;
+    height: 25rem;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: black;
+    align-self: flex-end;
+}
+
+.child2 .style-div-2 {
+    width: 100%;
+    height: 25rem;
+    clip-path: polygon(100% 15%, 0% 100%, 100% 100%);
+    background-color: rgb(45, 45, 45);
+}
