@@ -64,7 +64,7 @@ def home_html():
             flash('Image successfully uploaded')
             text = tess.image_to_string(PIL.Image.open(f"static\\uploads\\{filename}"))
             
-    #keywords = ["company","experience","officer","gmail"]
+    keywords = ["company","experience","officer","gmail"]
     information = extract_information(text, keywords)
         
     return render_template("home.html", image_name=None, information=information)
